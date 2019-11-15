@@ -1,4 +1,5 @@
 {
+  "homepage": "http://olejardamir.github.io/hertzTrade",
   "name": "_HERTZ",
   "version": "1.0.0",
   "description": "",
@@ -10,7 +11,10 @@
     "dev": "node_modules/.bin/webpack && node server/main.js",
     "webpack": "node_modules/.bin/webpack --watch",
     "start": "node server/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -21,8 +25,10 @@
     "truffle-hdwallet-provider": "^1.0.17"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "truffle-contract": "^4.0.31",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
 }
+
