@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/hertzTrade/static/js/main.572c0b9e.chunk.js",
+    "main.js.map": "/hertzTrade/static/js/main.572c0b9e.chunk.js.map",
+    "runtime-main.js": "/hertzTrade/static/js/runtime-main.557a346f.js",
+    "runtime-main.js.map": "/hertzTrade/static/js/runtime-main.557a346f.js.map",
+    "index.html": "/hertzTrade/index.html",
+    "precache-manifest.35068ee30349823d71e7ee796f90d52d.js": "/hertzTrade/precache-manifest.35068ee30349823d71e7ee796f90d52d.js",
+    "service-worker.js": "/hertzTrade/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.557a346f.js",
+    "static/js/main.572c0b9e.chunk.js"
+  ]
+}
