@@ -1,0 +1,28 @@
+{
+  "name": "_HERTZ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "node_modules/.bin/webpack && node server/main.js",
+    "webpack": "node_modules/.bin/webpack --watch",
+    "start": "node server/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bignumber.js": "^9.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "devDependencies": {
+    "truffle-contract": "^4.0.31",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

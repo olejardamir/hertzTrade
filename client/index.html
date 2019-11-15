@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Hertz DApp</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+<div class="maindiv">
+<header class="App-header pgcenter"><img class="logo" src="https://raw.githubusercontent.com/olejardamir/Hertz/master/roundLogo_400by400.png" class="logo" alt="Coin"></header>
+ <br>
+ <div id="title" class="pgcenter"><h1 class="App-title">Hertz DApp for Token Exchange: </h1></div>
+ <br>
+
+
+<div class="pgcenter">
+<div class="console">
+ <div id="output"></div>
+ <div id="errorHolder"></div>
+</div>
+</div>
+
+ <br>
+
+<div class="calculatorContainer pgcenter">
+ <div id="title2"><h2 class="App-title">HZ - ETH Calculator: </h2></div>
+ <div>
+ <label for="hztoeth" class="col-lg-2 control-label">Calculate, Hertz to Ethereum</label>
+  <input id="hztoeth" type="text"/>
+  <button id="hztoethbttn">Calculate</button>
+ </div>
+
+ <div>
+  <label for="ethtohz" class="col-lg-2 control-label">Calculate, Ethereum to Hertz</label>
+  <input id="ethtohz" type="text"/>
+  <button id="ethtohzbttn">Calculate</button>
+ </div>
+</div>
+
+<br>
+
+<div class="tradeContainer pgcenter">
+ <div class="title2"><h2 class="App-title">HZ - ETH Trade: </h2></div>
+ <div>
+  <label for="buyhz" class="col-lg-2 control-label">Exchange Ethereum for Hertz:</label>
+  <input id="buyhz" type="text"/>
+  <button id="buyhzbttn">ETH to HZ</button>
+ </div>
+
+ <div>
+  <label for="buyeth" class="col-lg-2 control-label">Exchange Hertz for Ethereum:</label>
+  <input id="buyeth" type="text"/>
+  <button id="buyethbttn">HZ to ETH</button>
+ </div>
+
+ <div>
+  <button id="sellallbttn">Sell All HZ!</button>
+ </div>
+</div>
+
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="dist/bundle.js"></script>
+</body>
+</html>
