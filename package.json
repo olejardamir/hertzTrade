@@ -11,8 +11,8 @@
     "dev": "node_modules/.bin/webpack && node server/main.js",
     "webpack": "node_modules/.bin/webpack --watch",
     "start": "node server/main.js",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -31,4 +31,3 @@
     "webpack-cli": "^3.3.10"
   }
 }
-
