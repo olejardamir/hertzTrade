@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "068600a7a9834a79fa9fd1e8a0d8de18",
+    "revision": "04260f185e07156349b57ee930723615",
     "url": "/hertzTrade/index.html"
   },
   {
-    "revision": "9bbdb93e28c5b91e195e",
+    "revision": "eb0e10255c476c161f02",
     "url": "/hertzTrade/static/css/main.712b3972.chunk.css"
   },
   {
-    "revision": "9bbdb93e28c5b91e195e",
-    "url": "/hertzTrade/static/js/main.c8bc14eb.chunk.js"
+    "revision": "eb0e10255c476c161f02",
+    "url": "/hertzTrade/static/js/main.f56c228a.chunk.js"
   },
   {
     "revision": "59fd3c7fe152a9e85aa8",
