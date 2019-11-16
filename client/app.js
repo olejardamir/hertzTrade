@@ -7,6 +7,7 @@ App = {
     contracts: {},
     currentAccount:{},
     initWeb3 : async function (){
+        window.ethereum.enable();
         if (process.env.MODE == 'development' || typeof window.web3 === 'undefined'){
             App.web3Provider = new Web3.providers.HttpProvider(process.env.LOCAL_NODE);
         }
