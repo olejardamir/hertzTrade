@@ -176,7 +176,7 @@ App = {
 
     init : async function (){
         await App.initWeb3();       
-        //App.loadMessage();          
+        App.loadMessage();          
     }
  
 }  
