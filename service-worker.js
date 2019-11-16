@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hertzTrade/precache-manifest.35068ee30349823d71e7ee796f90d52d.js"
+  "/hertzTrade/precache-manifest.ee5c5ef766b646dbd0e02f90d66058a3.js"
 );
 
 self.addEventListener('message', (event) => {
