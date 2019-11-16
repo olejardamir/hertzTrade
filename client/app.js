@@ -7,7 +7,19 @@ App = {
     contracts: {},
     currentAccount:{},
     initWeb3 : async function (){
-        window.ethereum.enable();
+
+        let ethereum = window.ethereum;
+        let web3 = window.web3;
+        if (typeof ethereum !== 'undefined') {
+            await ethereum.enable();
+            web3 = new Web3(ethereum);
+        } else if (typeof web3 !== 'undefined') {
+            web3 = new Web3(web3.currentProvider);
+        } else {
+            web3 = new Web3(new Web3.providers.HttpProvider(process.env.WEB3_PROVIDER));
+        }
+
+
         if (process.env.MODE == 'development' || typeof window.web3 === 'undefined'){
             App.web3Provider = new Web3.providers.HttpProvider(process.env.LOCAL_NODE);
         }
@@ -177,7 +189,7 @@ App = {
 
     init : async function (){
         await App.initWeb3();       
-        App.loadMessage();          
+        //App.loadMessage();
     }
  
 }  
