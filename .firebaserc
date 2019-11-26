@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "hertzdapp": "hertzdapp",
+    "default": "hertzdapp"
+  }
+}

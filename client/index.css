@@ -63,12 +63,16 @@ a{
         width: 70em
     }
 
-    .calculatorContainer, .tradeContainer
+    .calculatorContainer, .tradeContainer, .utilsContainer
 {
     border: 1px solid white;
     padding: 20px;
         background: rgba(32, 32, 55, 0.7);
 }
+
+    .tblcenter{
+        margin-left: 36%;
+    }
 
    img.logo{
        width: 100px;

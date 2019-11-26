@@ -40,6 +40,7 @@ App = {
         return App.bindEvents();
     },
     bindEvents: function() {
+        $('#addtokenbttn').click(App.addtokenfn);
         $('#hztoethbttn').click(App.hztoethfn);
         $('#ethtohzbttn').click(App.ethtohzfn);
         $('#buyhzbttn').click(App.buyhzfn);
@@ -47,6 +48,27 @@ App = {
         $('#sellallbttn').click(App.sellallfn);
      },
 
+
+    addtokenfn: function(){
+        App.contracts.Hertz.deployed().then(async function(instance){
+            web3.currentProvider.sendAsync({
+                method: "wallet_watchAsset",
+                params: {
+                    type: 'ERC20',
+                    options: {
+                        address: '0x6a4b6316D1d03d2f2B3A0294502F8fAF0F38cA14',
+                        symbol: 'HZ',
+                        image: 'https://raw.githubusercontent.com/olejardamir/Hertz/master/roundLogo_400by400.png',
+                        decimals: 18
+                    }
+                }
+            })
+
+        }).then(function(result){
+         }).catch(function (error){
+            App.showMessage("Console@HertzExchange:~$ Error adding to Metamask");
+        })
+    },
 
     hztoethfn: function (){
         if ($('#hztoeth').val()){
