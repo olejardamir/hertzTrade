@@ -67,11 +67,11 @@
     "sass-loader": "7.2.0",
     "semver": "6.3.0",
     "style-loader": "1.0.0",
-    "terser-webpack-plugin": "1.4.1",
+    "terser-webpack-plugin": "5.4.0",
     "truffle-hdwallet-provider": "^1.0.17",
     "ts-pnp": "1.1.4",
     "url-loader": "2.1.0",
-    "webpack": "4.41.0",
+    "webpack": "5.105.4",
     "webpack-dev-server": "3.2.1",
     "webpack-manifest-plugin": "2.1.1",
     "workbox-webpack-plugin": "4.3.1"
@@ -79,7 +79,7 @@
   "devDependencies": {
     "gh-pages": "^2.1.1",
     "truffle-contract": "^4.0.31",
-    "webpack": "^4.41.2",
+    "webpack": "^5.105.4",
     "webpack-cli": "^3.3.10"
   },
   "jest": {
